@@ -1,6 +1,7 @@
 import { Button, Frog, TextInput } from 'frog'
 import { devtools } from 'frog/dev'
 import { serveStatic } from 'frog/serve-static'
+import { colors } from 'frog/ui'
 // import { neynar } from 'frog/hubs'
 import { handle } from 'frog/vercel'
 
@@ -23,7 +24,8 @@ app.frame('/', (c) => {
     count = 0;
     return c.res({
         action: "/Gojo",
-        image: "https://m.media-amazon.com/images/I/718RCq4gL0L.png",
+        image: (<div style={{ color: "white" }}> HelloTema </div>),
+        // image: "https://m.media-amazon.com/images/I/718RCq4gL0L.png",
         intents: [
             <Button value="apples">Start</Button>, ,
         ],
@@ -33,7 +35,8 @@ app.frame('/', (c) => {
 app.frame('/Gojo', (c) => {
     return c.res({
         action: "/Killua",
-        image: "https://staticg.sportskeeda.com/editor/2023/06/f2988-16880551809512-1920.jpg",
+        image: (<div>HelloTema</div>),
+        // image: "https://staticg.sportskeeda.com/editor/2023/06/f2988-16880551809512-1920.jpg",
         intents: [
             <Button value="Naruto">Naruto</Button>,
             <Button value="Gojo">Gojo</Button>,
@@ -51,7 +54,8 @@ app.frame('/Killua', (c) => {
 
     return c.res({
         action: "/Gon",
-        image: "https://imgur.com/rppiOqu.jpg",
+        image: (<div>HelloTema</div>),
+        // image: "https://imgur.com/rppiOqu.jpg",
         intents: [
             <Button value="Gon">Gon</Button>,
             <Button value="Hisoka">Hisoka</Button>,
@@ -69,7 +73,8 @@ app.frame('/Gon', (c) => {
 
     return c.res({
         action: "/Results",
-        image: "https://i.pinimg.com/originals/dc/5b/de/dc5bdeb3b5e9406a6e725dc77c3a50d0.png",
+        image: (<div>HelloTema</div>),
+        // image: "https://i.pinimg.com/originals/dc/5b/de/dc5bdeb3b5e9406a6e725dc77c3a50d0.png",
         intents: [
             <Button value="Gon">Gon</Button>,
             <Button value="Hisoka">Hisoka</Button>,
